@@ -1,0 +1,440 @@
+/* ************************* Common Css ******************* */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0;
+}
+p {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 1170px !important;
+}
+.title h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #1e1e1e;
+}
+.title p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: #616161;
+}
+/* **************** Common Css End ********************** */
+.navbar {
+  position: fixed;
+  width: 100%;
+}
+.navbar .navbar-nav .nav-item {
+  margin-left: 53px;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #616161;
+  padding: 0;
+  transition: all 0.3s linear;
+}
+.navbar .active {
+  color: rgb(31, 31, 175) !important;
+  transform: scale(1.2);
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: rgb(31, 31, 175) !important;
+  font-weight: 600;
+}
+.navbar .btn {
+  padding: 16px 35px;
+  background: #007f5f;
+  border: 1px solid #007f5f;
+  border-radius: 17px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  transition: 0.2s;
+}
+.navbar .btn:hover {
+  border: 1px solid #007f5f;
+  background: none;
+  color: black;
+}
+/* ================== Banner Part Start ======================*/
+#bannerPart {
+  width: 100%;
+  background: #f8f8f8;
+  padding: 135px 0px 0px;
+}
+#bannerPart .bannerText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  padding-bottom: 135px;
+}
+#bannerPart .bannerText h1 {
+  width: 573px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 80px;
+  letter-spacing: 0.2px;
+  color: #1e1e1e;
+}
+#bannerPart .bannerText p {
+  width: 597px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #616161;
+  opacity: 0.7;
+  margin: 30px 0 40px;
+}
+#bannerPart .bannerText a {
+  padding: 16px 35px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  background: #007f5f;
+  border-radius: 17px;
+}
+#bannerPart .bannerText .bannerBottom {
+  padding: 24px 29px 24px 23px;
+  background: #ffffff;
+  /* display: inline-block; */
+  border-radius: 0px 10px 10px 10px;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.05);
+  margin-top: 60px;
+  display: flex;
+  position: relative;
+  z-index: 99999;
+}
+#bannerPart .bannerText .location {
+  display: flex;
+  margin-right: 70px;
+}
+#bannerPart .bannerText .location .icon {
+  margin-right: 10px;
+}
+#bannerPart .bannerText .location .icon i {
+  font-size: 16px;
+  color: #007f5f;
+}
+#bannerPart .bannerText .location form {
+  display: flex;
+  flex-direction: column;
+}
+#bannerPart .bannerText .location form select {
+  border: none;
+  background: transparent;
+  width: 115px;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #292929;
+  margin-bottom: 8px;
+}
+#bannerPart .bannerText .location form input {
+  border: none;
+  background: transparent;
+  width: 135px;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #6a6a6a;
+}
+#bannerPart .bannerText .location form select,
+input:focus {
+  outline: 0;
+}
+#bannerPart .bannerText .searchIcon {
+  padding: 30px;
+  background: #007f5f;
+  border-radius: 10px;
+  color: #ffffff;
+}
+#bannerPart .bannerText .bannerImage img {
+  position: absolute;
+  bottom: 0;
+  left: 342px;
+  display: block;
+}
+/* ================== Banner Part End ====================== */
+/* ================== Travel Part Start ====================== */
+#travelPart {
+  margin: 149px 0px;
+  background: #ffffff;
+}
+
+#travelPart .title p {
+  width: 692px;
+  margin: 20px auto 112px;
+}
+.travel_01_gap {
+  row-gap: 30px;
+}
+#travelPart .travel_01.active {
+  background: #ffffff;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
+  border-radius: 14px;
+}
+#travelPart .travel_01:hover {
+  background: #ffffff;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
+  border-radius: 14px;
+}
+#travelPart .travel_01 .travelIcon i {
+  font-size: 31px;
+  color: #007f5f;
+  width: 74px;
+  height: 74px;
+  line-height: 74px;
+  text-align: center;
+  background: rgba(0, 127, 95, 0.1);
+  border-radius: 14px;
+}
+#travelPart .travel_01 {
+  padding: 63px 54px;
+}
+#travelPart .travel_01 .travelText h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #1e1e1e;
+  margin: 39px 0px 20px;
+}
+#travelPart .travel_01 .travelText p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #616161;
+}
+/* ================== Travel Part End====================== */
+/* ================== Popular Part Start====================== */
+#popularPart {
+  /* margin-bottom: 150px; */
+  background-color: rgb(236, 144, 144);
+}
+#popularPart p {
+  width: 692px;
+  margin: 20px auto 50px;
+}
+#popularPart .popularSliderPart .popularSlide {
+  width: 370px !important;
+  padding: 21px 20px 42px 21px;
+  border-radius: 14px;
+  margin: 0px 15px 150px;;
+}
+#popularPart .popularSliderPart .slick-slider{
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.05);
+}
+#popularPart .popularSliderPart .slick-active a {
+  background: #007F5F;
+  color: #FFFFFF !important;
+}
+#popularPart .popularSliderPart .popularSlide img {
+  width: 100%;
+  border-radius: 14px;
+  display: block;
+}
+#popularPart .popularSliderPart .popularSlide .popularIcon {
+  color: #e0e0e0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 30px 0px 10px;
+}
+#popularPart .popularSliderPart .popularSlide .popularIcon span {
+  color: #ff8b00;
+}
+#popularPart .popularSliderPart .popularSlide .popularText h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #1e1e1e;
+  width: 289px;
+  margin-bottom: 20px;
+}
+#popularPart .popularSliderPart .popularSlide .popularText p{
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #616161;
+  width: 325px;
+  margin-bottom: 20px;
+}
+#popularPart .popularSliderPart .popularSlide .popularText p span{
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #1e1e1e;
+}
+#popularPart .popularSliderPart .popularSlide .popularText a {
+  border: 1px solid #007F5F;
+  border-radius: 17px;
+  padding: 10px 36px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #007F5F;
+  margin: 10px 0px 42px;
+}
+/* ================== Popular Part Start====================== */
+/* ************************ Travel Discover Part Start****************** */
+#travelDiscover{
+  background: rgba(30, 30, 30, 0.05);
+  padding: 150px 0px;
+}
+#travelDiscover .title h2{
+width: 418px;
+text-align: start;
+}
+#travelDiscover .title p{
+  width: 516px;
+  text-align: start;
+  margin: 20px 0px 10px;
+}
+.gaped{
+  margin-top: 62px
+}
+#travelDiscover .discoverDetail{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+}
+#travelDiscover .discoverDetail .discover_01{
+  display: flex;
+  margin-bottom: 10px;
+}
+#travelDiscover .discoverDetail .discover_01 i{
+ color: #007F5F;
+ font-size: 24px;
+ margin-right: 10px;
+}
+#travelDiscover .discoverDetail .discover_01 p{
+  width: 338px;
+  line-height: 30px;
+}
+#travelDiscover .discoverDetail a{
+  padding: 16px 35px;
+  background: #007F5F;
+  border-radius: 17px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-top: 30px;
+}
+#travelDiscover .clientReview {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+#travelDiscover .clientReview .clientReview_01 {
+ width: 270px;
+ border-radius: 17px;
+ background: #FFFFFF;
+ padding: 62px 32px;
+}
+#travelDiscover .clientReview .clientActive {
+  background: #007F5F !important;
+ }
+#travelDiscover .clientReview .clientReview_01 h3{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 60px;
+letter-spacing: 0.2px;
+color: #1E1E1E;
+margin-top: 20px;
+}
+#travelDiscover .clientReview .clientActive h3{
+  color: #FFFFFF;
+}
+#travelDiscover .clientReview .clientReview_01 p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 38px;
+  letter-spacing: 0.2px;
+  color: #616161; 
+  width: 210px;
+}
+#travelDiscover .clientReview .clientActive p{
+  color: #FFFFFF;
+}
+/* ************************ Travel Discover Part Start****************** */
+
+

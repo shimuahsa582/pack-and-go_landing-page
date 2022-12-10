@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pack and Go landing page</title>
+    <!-- ================================ All Fonts Link ======================= -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ===================== All Css Link ============================== -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/venobox.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body data-bs-spy="scroll">
+    <!-- ================= Nav part start =================== -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <img src="images/logo.png" alt="logo.png" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul id="myDIV" class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#bannerPart"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#travelPart"
+                >Tours</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#popularPart"
+                >Booking</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#travelDiscover"
+                >Pages</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Blog </a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <button class="btn" type="submit">Book Now</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- ================= Nav part end =================== -->
+    <!-- ================== Banner Part Start ====================== -->
+    <section id="bannerPart">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="bannerText">
+              <h1>Start Exploring to Find Inner Peace by Traveling</h1>
+              <p>
+                Lost yourself with Vacation and Travel into the place that you
+                never visit before. We have thousand places in our database for
+                you.
+              </p>
+              <a href="#">Discover Now</a>
+              <!-- <div></div> -->
+              <div class="bannerBottom">
+                <div class="location">
+                  <div class="icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="text">
+                    <form action="">
+                      <select name="" id="">
+                        <option value="">Location</option>
+                        <option value="Dhaka">Dhaka</option>
+                        <option value="Saver">Saver</option>
+                        <option value="Dhaka">Dhaka</option>
+                        <option value="Saver">Saver</option>
+                        <option value="Dhaka">Dhaka</option>
+                      </select>
+                      <input
+                        type="text"
+                        name="location"
+                        id="location"
+                        placeholder="Enter your location"
+                      />
+                    </form>
+                  </div>
+                </div>
+                <div class="location">
+                  <div class="icon">
+                    <i class="fa-solid fa-calendar-days"></i>
+                  </div>
+                  <div class="text">
+                    <form action="">
+                      <select name="" id="">
+                        <option value="">Date</option>
+                        <option value="Dhaka">Dhaka</option>
+                        <option value="Saver">Saver</option>
+                        <option value="Dhaka">Dhaka</option>
+                        <option value="Saver">Saver</option>
+                        <option value="Dhaka">Dhaka</option>
+                      </select>
+                      <input
+                        type="text"
+                        name="location"
+                        id="location"
+                        placeholder="When you start?"
+                      />
+                    </form>
+                  </div>
+                </div>
+                <div class="location">
+                  <div class="icon">
+                    <i class="fa-solid fa-user"></i>
+                  </div>
+                  <div class="text">
+                    <form action="">
+                      <select name="" id="">
+                        <option value="">People</option>
+                        <option value="Dhaka">Dhaka</option>
+                        <option value="Saver">Saver</option>
+                        <option value="Dhaka">Dhaka</option>
+                        <option value="Saver">Saver</option>
+                        <option value="Dhaka">Dhaka</option>
+                      </select>
+                      <input
+                        type="text"
+                        name="location"
+                        id="location"
+                        placeholder="How many people"
+                      />
+                    </form>
+                  </div>
+                </div>
+                <div class="searchIcon">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+              <div class="bannerImage">
+                <img src="images/banner_img.png" alt="banner_img.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================== Banner Part End ====================== -->
+    <!-- ================== Travel Part Start ====================== -->
+    <section id="travelPart">
+      <div class="container">
+        <div class="title">
+          <h2>Travel Benefit For User</h2>
+          <p>
+            We are self-service data analytics software that lets you create
+            visually appealing data visualizations and insightful dashboards in
+            minutes.
+          </p>
+        </div>
+        <div class="row travel_01_gap">
+          <div class="col-lg-4">
+            <div class="travel_01 active">
+              <div class="travelIcon">
+                <i class="fa-solid fa-download"></i>
+              </div>
+              <div class="travelText">
+                <h3>Cheap than Other</h3>
+                <p>Travelya is cheaper than other travel agency.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="travel_01">
+              <div class="travelIcon">
+                <i class="fa-solid fa-shield"></i>
+              </div>
+              <div class="travelText">
+                <h3>Secure Payment</h3>
+                <p>You can pay your book without doubt again</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="travel_01">
+              <div class="travelIcon">
+                <i class="fa-solid fa-book-journal-whills"></i>
+              </div>
+              <div class="travelText">
+                <h3>Easy To Book</h3>
+                <p>Follow flow, Click, Pay. Wait just wait e-ticket.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="travel_01">
+              <div class="travelIcon">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div class="travelText">
+                <h3>24/7 Support</h3>
+                <p>We’re ready help you anytime and anywhere you are.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="travel_01">
+              <div class="travelIcon">
+                <i class="fa-solid fa-gear"></i>
+              </div>
+              <div class="travelText">
+                <h3>Best Offers</h3>
+                <p>Inform you about all best offers for all destination..</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="travel_01">
+              <div class="travelIcon">
+                <i class="fa-solid fa-power-off"></i>
+              </div>
+              <div class="travelText">
+                <h3>Fast Refund</h3>
+                <p>If you canceled. We can refund your money 1*12.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================== Travel Part End ====================== -->
+    <!-- ================== Popular Part Start ====================== -->
+    <section id="popularPart">
+      <div class="title">
+        <h2>Popular Destination</h2>
+        <p>
+          We are self-service data analytics software that lets you create
+          visually appealing data visualizations and insightful dashboards in
+          minutes.
+        </p>
+      </div>
+      <div class="popularSliderPart">
+        <div class="popularSlide">
+          <img src="images/popular1.png" alt="popular1.png" />
+          <div class="popularIcon">
+            <span><i class="fa-solid fa-star"></i></span>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>5 review</span>
+          </div>
+          <div class="popularText">
+            <h3>Mount Agung, Bali</h3>
+            <p>
+              Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua minim veniam
+            </p>
+            <p><span>$150</span> / Person</p>
+            <a href="#">Book Now</a>
+          </div>
+        </div>
+
+        <div class="popularSlide">
+          <img src="images/popular2.png" alt="popular2.png" />
+          <div class="popularIcon">
+            <span><i class="fa-solid fa-star"></i></span>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>5 review</span>
+          </div>
+          <div class="popularText">
+            <h3>Venice, Italy</h3>
+            <p>
+              Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua minim veniam
+            </p>
+            <p><span>$150</span> / Person</p>
+            <a href="#">Book Now</a>
+          </div>
+        </div>
+
+        <div class="popularSlide">
+          <img src="images/popular3.png" alt="/popular3.png" />
+          <div class="popularIcon">
+            <span><i class="fa-solid fa-star"></i></span>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>5 review</span>
+          </div>
+          <div class="popularText">
+            <h3>Paris, France</h3>
+            <p>
+              Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua minim veniam
+            </p>
+            <p><span>$150</span> / Person</p>
+            <a href="#">Book Now</a>
+          </div>
+        </div>
+
+        <div class="popularSlide">
+          <img src="images/popular4.png" alt="popular4.png" />
+          <div class="popularIcon">
+            <span><i class="fa-solid fa-star"></i></span>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>5 review</span>
+          </div>
+          <div class="popularText">
+            <h3>Santorini, Greece</h3>
+            <p>
+              Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua minim veniam
+            </p>
+            <p><span>$150</span> / Person</p>
+            <a href="#">Book Now</a>
+          </div>
+        </div>
+
+        <div class="popularSlide">
+          <img src="images/popular5.png" alt="popular5.png" />
+          <div class="popularIcon">
+            <span><i class="fa-solid fa-star"></i></span>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>5 review</span>
+          </div>
+          <div class="popularText">
+            <h3>Lake Thun, Switzerland</h3>
+            <p>
+              Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua minim veniam
+            </p>
+            <p><span>$150</span> / Person</p>
+            <a href="#">Book Now</a>
+          </div>
+        </div>
+
+        <div class="popularSlide">
+          <img src="images/popular1.png" alt="popular1.png" />
+          <div class="popularIcon">
+            <span><i class="fa-solid fa-star"></i></span>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>5 review</span>
+          </div>
+          <div class="popularText">
+            <h3>Mount Agung, Bali</h3>
+            <p>
+              Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua minim veniam
+            </p>
+            <p><span>$150</span> / Person</p>
+            <a href="#">Book Now</a>
+          </div>
+        </div>
+
+        <div class="popularSlide">
+          <img src="images/popular2.png" alt="popular2.png" />
+          <div class="popularIcon">
+            <span><i class="fa-solid fa-star"></i></span>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>5 review</span>
+          </div>
+          <div class="popularText">
+            <h3>Venice, Italy</h3>
+            <p>
+              Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua minim veniam
+            </p>
+            <p><span>$150</span> / Person</p>
+            <a href="#">Book Now</a>
+          </div>
+        </div>
+
+        <div class="popularSlide">
+          <img src="images/popular3.png" alt="popular3.png" />
+          <div class="popularIcon">
+            <span><i class="fa-solid fa-star"></i></span>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>5 review</span>
+          </div>
+          <div class="popularText">
+            <h3>Paris, France</h3>
+            <p>
+              Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua minim veniam
+            </p>
+            <p><span>$150</span> / Person</p>
+            <a href="#">Book Now</a>
+          </div>
+        </div>
+
+        <div class="popularSlide">
+          <img src="images/popular4.png" alt="popular4.png" />
+          <div class="popularIcon">
+            <span><i class="fa-solid fa-star"></i></span>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>5 review</span>
+          </div>
+          <div class="popularText">
+            <h3>Santorini, Greece</h3>
+            <p>
+              Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua minim veniam
+            </p>
+            <p><span>$150</span> / Person</p>
+            <a href="#">Book Now</a>
+          </div>
+        </div>
+
+        <div class="popularSlide">
+          <img src="images/popular5.png" alt="popular5.png" />
+          <div class="popularIcon">
+            <span><i class="fa-solid fa-star"></i></span>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>5 review</span>
+          </div>
+          <div class="popularText">
+            <h3>Lake Thun, Switzerland</h3>
+            <p>
+              Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua minim veniam
+            </p>
+            <p><span>$150</span> / Person</p>
+            <a href="#">Book Now</a>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <!-- ================== Popular Part End ====================== -->
+    <!-- ================== Travel Discover Part Start ====================== -->
+    <section id="travelDiscover">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 gaped">
+            <div class="title">
+              <h2>Go Travel, Discover Remember Us</h2>
+              <p>
+                We are self-service data analytics software that lets you create
+                visually appealing data visualizations and insightful dashboards
+                in minutes.
+              </p>
+            </div>
+            <div class="discoverDetail">
+              <div class="discover_01">
+                <i class="fa-solid fa-check"></i>
+                <p>
+                  We are self-service data software visually appealing data
+                  visualizations.
+                </p>
+              </div>
+              <div class="discover_01">
+                <i class="fa-solid fa-check"></i>
+                <p>
+                  We are self-service data software visually appealing data
+                  visualizations.
+                </p>
+              </div>
+              <div class="discover_01">
+                <i class="fa-solid fa-check"></i>
+                <p>
+                  We are self-service data software visually appealing data
+                  visualizations.
+                </p>
+              </div>
+              <a href="#">Discover Place</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="clientReview">
+              <div class="clientReview_01 clientActive">
+                <img src="images/discover1.png" alt="discover1.png" />
+                <h3>500+</h3>
+                <p>Satisfied Clients</p>
+              </div>
+              <div class="clientReview_01">
+                <img src="images/discover2.png" alt="discover2.png" />
+                <h3>250+</h3>
+                <p>Active Achieve</p>
+              </div>
+              <div class="clientReview_01">
+                <img src="images/discover3.png" alt="discover3.png" />
+                <h3>15K+</h3>
+                <p>Active Members</p>
+              </div>
+              <div class="clientReview_01">
+                <img src="images/discover4.png" alt="discover4.png" />
+                <h3>10K+</h3>
+                <p>Tour Destination</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================== Travel Discover Part Start ====================== -->
+    <!-- =================== All JS Link ======================= -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
