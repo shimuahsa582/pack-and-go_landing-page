@@ -10,6 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <!-- ===================== All Css Link ============================== -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -57,10 +63,12 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Features</a>
+              <a class="nav-link" aria-current="page" href="#destinationPart"
+                >Features</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Blog </a>
+              <a class="nav-link" aria-current="page" href="#evenPart">Blog </a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -82,7 +90,7 @@
                 never visit before. We have thousand places in our database for
                 you.
               </p>
-              <a href="#">Discover Now</a>
+              <a class="myButton" href="#">Discover Now</a>
               <!-- <div></div> -->
               <div class="bannerBottom">
                 <div class="location">
@@ -280,7 +288,6 @@
             <a href="#">Book Now</a>
           </div>
         </div>
-
         <div class="popularSlide">
           <img src="images/popular2.png" alt="popular2.png" />
           <div class="popularIcon">
@@ -301,7 +308,6 @@
             <a href="#">Book Now</a>
           </div>
         </div>
-
         <div class="popularSlide">
           <img src="images/popular3.png" alt="/popular3.png" />
           <div class="popularIcon">
@@ -322,7 +328,6 @@
             <a href="#">Book Now</a>
           </div>
         </div>
-
         <div class="popularSlide">
           <img src="images/popular4.png" alt="popular4.png" />
           <div class="popularIcon">
@@ -343,7 +348,6 @@
             <a href="#">Book Now</a>
           </div>
         </div>
-
         <div class="popularSlide">
           <img src="images/popular5.png" alt="popular5.png" />
           <div class="popularIcon">
@@ -364,7 +368,6 @@
             <a href="#">Book Now</a>
           </div>
         </div>
-
         <div class="popularSlide">
           <img src="images/popular1.png" alt="popular1.png" />
           <div class="popularIcon">
@@ -385,7 +388,6 @@
             <a href="#">Book Now</a>
           </div>
         </div>
-
         <div class="popularSlide">
           <img src="images/popular2.png" alt="popular2.png" />
           <div class="popularIcon">
@@ -406,9 +408,8 @@
             <a href="#">Book Now</a>
           </div>
         </div>
-
         <div class="popularSlide">
-          <img src="images/popular3.png" alt="popular3.png" />
+          <img src="images/popular3.png" alt="/popular3.png" />
           <div class="popularIcon">
             <span><i class="fa-solid fa-star"></i></span>
             <i class="fa-solid fa-star"></i>
@@ -427,7 +428,6 @@
             <a href="#">Book Now</a>
           </div>
         </div>
-
         <div class="popularSlide">
           <img src="images/popular4.png" alt="popular4.png" />
           <div class="popularIcon">
@@ -448,7 +448,6 @@
             <a href="#">Book Now</a>
           </div>
         </div>
-
         <div class="popularSlide">
           <img src="images/popular5.png" alt="popular5.png" />
           <div class="popularIcon">
@@ -469,7 +468,6 @@
             <a href="#">Book Now</a>
           </div>
         </div>
-        
       </div>
     </section>
     <!-- ================== Popular Part End ====================== -->
@@ -477,7 +475,7 @@
     <section id="travelDiscover">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 gaped">
+          <div class="col-lg-6">
             <div class="title">
               <h2>Go Travel, Discover Remember Us</h2>
               <p>
@@ -508,41 +506,205 @@
                   visualizations.
                 </p>
               </div>
-              <a href="#">Discover Place</a>
+              <a class="myButton" href="#">Discover Place</a>
             </div>
           </div>
+
           <div class="col-lg-6">
-            <div class="clientReview">
-              <div class="clientReview_01 clientActive">
-                <img src="images/discover1.png" alt="discover1.png" />
-                <h3>500+</h3>
-                <p>Satisfied Clients</p>
+            <div class="row clientGap">
+              <div class="col-lg-6">
+                <div class="clientReview_01 clientActive">
+                  <i class="fa-solid fa-user"></i>
+                  <h3><span class="travelPrice">500</span>+</h3>
+                  <p>Satisfied Clients</p>
+                </div>
               </div>
-              <div class="clientReview_01">
-                <img src="images/discover2.png" alt="discover2.png" />
-                <h3>250+</h3>
-                <p>Active Achieve</p>
+              <div class="col-lg-6">
+                <div class="clientReview_01 clientActive">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <h3><span class="travelPrice">250</span>+</h3>
+                  <p>Active Achieve</p>
+                </div>
               </div>
-              <div class="clientReview_01">
-                <img src="images/discover3.png" alt="discover3.png" />
-                <h3>15K+</h3>
-                <p>Active Members</p>
+              <div class="col-lg-6">
+                <div class="clientReview_01 clientActive">
+                  <i class="fa-solid fa-user-group"></i>
+                  <h3><span class="travelPrice">15</span>K+</h3>
+                  <p>Active Members</p>
+                </div>
               </div>
-              <div class="clientReview_01">
-                <img src="images/discover4.png" alt="discover4.png" />
-                <h3>10K+</h3>
-                <p>Tour Destination</p>
+              <div class="col-lg-6">
+                <div class="clientReview_01 clientActive">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <h3><span class="travelPrice">10</span>K+</h3>
+                  <p>Tour Destination</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- ================== Travel Discover Part Start ====================== -->
+    <!-- ================== Travel Discover Part End ====================== -->
+    <!-- ================== Destination Part Start ====================== -->
+    <section id="destinationPart">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 leftPart">
+            <div class="title">
+              <h2>We have more than 1000 selected Destination</h2>
+              <p>
+                You can choose one of many option that we have on our website.
+                Every destination have been 4+ star rated by our user before.
+                You can search by clicking our button on below of the this text
+                man.
+              </p>
+            </div>
+            <a class="myButton" href="#">Search Destination</a>
+          </div>
+          <div class="col-lg-6">
+            <div class="destinationRightPart mainCommonPart">
+              <div class="destination_01_img commonImages_01">
+                <img src="images/destination1.png" alt="destination1.png" />
+                <form>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <input type="text" placeholder="Recommended Destination" />
+                </form>
+                <ul>
+                  <li class="destinationList">
+                    <p>Venice, Italy</p>
+                    <i class="fa-solid fa-check"></i>
+                  </li>
+                  <li class="destinationList desActive">
+                    <p>Berlin, Germany</p>
+                    <i class="fa-solid fa-check"></i>
+                  </li>
+                  <li class="destinationList">
+                    <p>Andalucia, Spain</p>
+                    <i class="fa-solid fa-check"></i>
+                  </li>
+                </ul>
+              </div>
+              <div class="destination_02_img commonImages_02">
+                <img src="images/destination2.png" alt="destination2.png" />
+              </div>
+              <div class="destination_03_img commonImages_03">
+                <img src="images/destination3.png" alt="destination3.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================== Destination Part End ====================== -->
+    <!-- ================== Even Part Start ====================== -->
+    <section id="evenPart">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="evenLeftPart mainCommonPart">
+              <div class="evenLeftPart_01_img commonImages_01">
+                <img src="images/even1.png" alt="even1.png" />
+              </div>
+              <div class="evenLeftPart_03_img">
+                <img src="images/even3.png" alt="even3.png" />
+              </div>
+              <div class="evenLeftPart_02_img commonImages_02">
+                <img src="images/even2.png" alt="even2.png" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="evenRightPart">
+              <div class="title">
+                <h2>Always give you promo on every Month / Event</h2>
+                <p>
+                  We make sure give you a lot of promo every motnh or event
+                  based on calendar. If you want, just Subscribe on Newsletter.
+                </p>
+              </div>
+              <div>
+                <ul class="evenMainListStyle">
+                  <li class="evenRightListStyle">
+                    <i class="fa-solid fa-check"></i>
+                    <p>25% for New Members</p>
+                  </li>
+                  <li class="evenRightListStyle">
+                    <i class="fa-solid fa-check"></i>
+                    <p>Cancelled refund 100%</p>
+                  </li>
+                  <li class="evenRightListStyle">
+                    <i class="fa-solid fa-check"></i>
+                    <p>Up 50% on your birthday</p>
+                  </li>
+                  <li class="evenRightListStyle">
+                    <i class="fa-solid fa-check"></i>
+                    <p>Reward for 1000% Points</p>
+                  </li>
+                  <li class="evenRightListStyle">
+                    <i class="fa-solid fa-check"></i>
+                    <p>Cashback 10% via OVO</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================== Even Part Start ====================== -->
+    <!-- ================== Money back Part Start ====================== -->
+    <section id="moneyBackPart">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="title">
+              <h2>100% Money back Guarantee If you Cancel</h2>
+              <p>
+                We Promises in this case. We still want to refund your money
+                when you cancel order.
+              </p>
+            </div>
+            <div class="moneyBackFormList">
+              <form>
+                <div></div>
+                <input type=" text" placeholder="Friendly, Quick, Easy" />
+                <i class="fa-solid fa-angle-up"></i>
+              </form>
+              <p>
+                Business messaging that feels just like the messenger apps you
+                and your customers use every day.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="moneyBackRightPart mainCommonPart">
+              <div class="moneyBackImg_01_img commonImages_01">
+                <img src="images/destination1.png" alt="destination1.png" />
+              </div>
+              <div class="moneyBackImg_02_img commonImages_02">
+                <img src="images/destination2.png" alt="destination2.png" />
+                <div class="moneyBackEmojiPart">
+                  <p class="moneyBackEmojiPart_01">Hi, Can you help me? 😔</p>
+                  <p class="moneyBackEmojiPart_02">Can I get my money back?</p>
+                  <p class="moneyBackEmojiPart_03">
+                    Thanks for your help!! 😍😍😍😍
+                  </p>
+                </div>
+              </div>
+              <div class="moneyBackImg_03_img commonImages_03">
+                <img src="images/destination3.png" alt="destination3.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================== Money back Part End ====================== -->
     <!-- =================== All JS Link ======================= -->
     <script src="js/jquery-1.12.4.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/venobox.min.js"></script>
     <script src="js/waypoints.min.js"></script>

@@ -19,6 +19,7 @@ p {
   margin: 0;
   font-family: "Nunito", sans-serif;
   font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 h1,
 h2,
@@ -34,13 +35,15 @@ h6 {
 .container {
   width: 1170px !important;
 }
+.title {
+  text-align: center;
+}
 .title h2 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
   line-height: 60px;
-  text-align: center;
   letter-spacing: 0.2px;
   color: #1e1e1e;
 }
@@ -50,13 +53,31 @@ h6 {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
-  text-align: center;
   color: #616161;
 }
-/* **************** Common Css End ********************** */
+.myButton {
+  padding: 16px 35px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  background: #007f5f;
+  border: 1px solid #007f5f;
+  border-radius: 17px;
+  transition: all 0.3s linear;
+}
+.myButton:hover {
+  background: transparent;
+  color: #007f5f;
+}
+/* ======================== Common Css End ========================*/
+/* ======================== Navbar Part Start ======================== */
 .navbar {
   position: fixed;
   width: 100%;
+  background: #ffffff;
 }
 .navbar .navbar-nav .nav-item {
   margin-left: 53px;
@@ -97,6 +118,7 @@ h6 {
   background: none;
   color: black;
 }
+/* ======================== Navbar Part End ======================== */
 /* ================== Banner Part Start ======================*/
 #bannerPart {
   width: 100%;
@@ -130,17 +152,6 @@ h6 {
   color: #616161;
   opacity: 0.7;
   margin: 30px 0 40px;
-}
-#bannerPart .bannerText a {
-  padding: 16px 35px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  color: #ffffff;
-  background: #007f5f;
-  border-radius: 17px;
 }
 #bannerPart .bannerText .bannerBottom {
   padding: 24px 29px 24px 23px;
@@ -264,27 +275,26 @@ input:focus {
 }
 /* ================== Travel Part End====================== */
 /* ================== Popular Part Start====================== */
-#popularPart {
-  /* margin-bottom: 150px; */
-  background-color: rgb(236, 144, 144);
-}
 #popularPart p {
   width: 692px;
   margin: 20px auto 50px;
 }
 #popularPart .popularSliderPart .popularSlide {
-  width: 370px !important;
+  width: 370px;
   padding: 21px 20px 42px 21px;
   border-radius: 14px;
-  margin: 0px 15px 150px;;
+  margin: 0px 15px 150px;
+  transition: all 0.4s linear;
 }
-#popularPart .popularSliderPart .slick-slider{
+/* Added slick slider code */
+#popularPart .popularSliderPart .slick-center {
   box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.05);
 }
-#popularPart .popularSliderPart .slick-active a {
-  background: #007F5F;
-  color: #FFFFFF !important;
+#popularPart .popularSliderPart .slick-center a {
+  background: #007f5f;
+  color: #ffffff !important;
 }
+/* slick slider code  end*/
 #popularPart .popularSliderPart .popularSlide img {
   width: 100%;
   border-radius: 14px;
@@ -313,7 +323,7 @@ input:focus {
   width: 289px;
   margin-bottom: 20px;
 }
-#popularPart .popularSliderPart .popularSlide .popularText p{
+#popularPart .popularSliderPart .popularSlide .popularText p {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -323,7 +333,7 @@ input:focus {
   width: 325px;
   margin-bottom: 20px;
 }
-#popularPart .popularSliderPart .popularSlide .popularText p span{
+#popularPart .popularSliderPart .popularSlide .popularText p span {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -333,108 +343,331 @@ input:focus {
   color: #1e1e1e;
 }
 #popularPart .popularSliderPart .popularSlide .popularText a {
-  border: 1px solid #007F5F;
+  border: 1px solid #007f5f;
   border-radius: 17px;
   padding: 10px 36px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
-  color: #007F5F;
+  color: #007f5f;
   margin: 10px 0px 42px;
 }
-/* ================== Popular Part Start====================== */
-/* ************************ Travel Discover Part Start****************** */
-#travelDiscover{
+/* ================== Popular Part End ====================== */
+/* ======================== Travel Discover Part Start ========================*/
+#travelDiscover {
   background: rgba(30, 30, 30, 0.05);
   padding: 150px 0px;
 }
-#travelDiscover .title h2{
-width: 418px;
-text-align: start;
+#travelDiscover .title h2 {
+  width: 418px;
+  text-align: start;
 }
-#travelDiscover .title p{
+#travelDiscover .title p {
   width: 516px;
   text-align: start;
   margin: 20px 0px 10px;
 }
-.gaped{
-  margin-top: 62px
-}
-#travelDiscover .discoverDetail{
+#travelDiscover .discoverDetail {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: flex-start;
 }
-#travelDiscover .discoverDetail .discover_01{
+#travelDiscover .discoverDetail .discover_01 {
   display: flex;
   margin-bottom: 10px;
 }
-#travelDiscover .discoverDetail .discover_01 i{
- color: #007F5F;
- font-size: 24px;
- margin-right: 10px;
+#travelDiscover .discoverDetail .discover_01 i {
+  color: #007f5f;
+  font-size: 24px;
+  margin-right: 10px;
 }
-#travelDiscover .discoverDetail .discover_01 p{
+#travelDiscover .discoverDetail .discover_01 p {
   width: 338px;
   line-height: 30px;
 }
-#travelDiscover .discoverDetail a{
-  padding: 16px 35px;
-  background: #007F5F;
-  border-radius: 17px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  color: #FFFFFF;
+#travelDiscover .discoverDetail a {
   margin-top: 30px;
 }
-#travelDiscover .clientReview {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
+.clientGap {
   row-gap: 30px;
 }
-#travelDiscover .clientReview .clientReview_01 {
- width: 270px;
- border-radius: 17px;
- background: #FFFFFF;
- padding: 62px 32px;
+#travelDiscover .clientReview_01 {
+  background: #ffffff;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.05);
+  border-radius: 17px;
+  padding: 62px 32px;
+  transition: all 0.3s linear;
 }
-#travelDiscover .clientReview .clientActive {
-  background: #007F5F !important;
- }
-#travelDiscover .clientReview .clientReview_01 h3{
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 40px;
-line-height: 60px;
-letter-spacing: 0.2px;
-color: #1E1E1E;
-margin-top: 20px;
+#travelDiscover .clientReview_01 i {
+  padding: 22px 20px;
+  font-size: 35px;
+  color: #007f5f;
+  margin-bottom: 20px;
+  background: rgba(0, 127, 95, 0.1);
+  border-radius: 14px;
+  transition: all 0.3s linear;
 }
-#travelDiscover .clientReview .clientActive h3{
-  color: #FFFFFF;
+#travelDiscover .clientReview_01 h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 0.2px;
+  color: #1e1e1e;
+  margin-top: 20px;
+  transition: all 0.3s linear;
 }
-#travelDiscover .clientReview .clientReview_01 p{
-  font-family: 'Poppins';
+#travelDiscover .clientReview_01 p {
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 25px;
   line-height: 38px;
   letter-spacing: 0.2px;
-  color: #616161; 
+  color: #616161;
   width: 210px;
+  transition: all 0.3s linear;
 }
-#travelDiscover .clientReview .clientActive p{
-  color: #FFFFFF;
+#travelDiscover .clientActive:hover {
+  background: #007f5f !important;
 }
-/* ************************ Travel Discover Part Start****************** */
-
-
+#travelDiscover .clientReview_01:hover i {
+  background: #ffffff;
+}
+#travelDiscover .clientActive:hover h3 {
+  color: #ffffff !important;
+}
+#travelDiscover .clientReview_01:hover p {
+  color: #ffffff !important;
+}
+/* ======================== Travel Discover Part End ======================== */
+/* ======================== Destination part start ======================== */
+#destinationPart {
+  margin: 151px 0px 70px;
+}
+#destinationPart .title h2 {
+  width: 507px;
+  text-align: start;
+}
+#destinationPart .title p {
+  width: 516px;
+  text-align: start;
+  margin: 20px 0px 40px;
+}
+#destinationPart .title a {
+  text-align: start;
+}
+.leftPart {
+  margin-top: 123px;
+}
+.mainCommonPart {
+  position: relative;
+}
+.destinationRightPart form {
+  display: flex;
+  margin: 40px 0px 0px;
+  width: 350px;
+  border-radius: 8px 8px 0px 0px;
+  padding: 12px 98px 12px 20px;
+}
+.destinationRightPart form input {
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #616161;
+  margin-left: 12px;
+}
+.destinationRightPart form i {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 28px;
+  color: #007f5f;
+  margin-left: 16px;
+}
+li.destinationList {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  padding: 10px 8px 10px 48px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #616161;
+}
+li.destinationList.desActive {
+  font-weight: 600;
+  font-size: 15.9936px;
+  background: #ffffff;
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.05);
+  border-radius: 7.9968px;
+}
+.commonImages_01 img {
+  border-radius: 17px;
+}
+.commonImages_01 {
+  display: inline-block;
+}
+.commonImages_03 {
+  position: absolute;
+  top: 98px;
+  left: 326px;
+  display: inline-block;
+}
+.commonImages_02 img {
+  position: absolute;
+  top: 188px;
+  left: 202px;
+  z-index: 99999;
+  border: 10px solid #ffffff;
+  border-radius: 14px;
+  display: inline-block;
+}
+/* ======================== Destination Part End======================== */
+/*========================Even Part Start =========================== */
+.evenLeftPart_03_img {
+  position: absolute;
+  left: 110px;
+  top: 317px;
+  z-index: -1;
+}
+.evenRightPart {
+  margin: 101px 0px 86px 78px;
+}
+.evenRightPart .title {
+  text-align: start;
+}
+.evenRightPart .title h2 {
+  width: 489px;
+}
+.evenRightPart .title p {
+  width: 431px;
+  margin: 20px 0px;
+}
+ul.evenMainListStyle {
+  display: flex;
+  width: 467px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+li.evenRightListStyle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+li.evenRightListStyle p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #616161;
+}
+li.evenRightListStyle i {
+  border: #007f5f;
+  font-size: 24px;
+  margin-right: 10px;
+}
+/* ======================== Even Part End ======================== */
+/* ======================== Money Back Part Start ========================*/
+#moneyBackPart {
+  padding: 50px 0px;
+}
+#moneyBackPart .title h2 {
+  width: 507px;
+  text-align: start;
+}
+#moneyBackPart .title p {
+  width: 516px;
+  text-align: start;
+}
+.moneyBackFormList {
+  border-radius: 8px;
+  width: 420px;
+  padding: 20px 32px 20px 20px;
+  background: #e3eae9;
+}
+.moneyBackFormList form {
+  display: flex;
+  align-items: center;
+}
+.moneyBackFormList form div {
+  background: #007f5f;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.moneyBackFormList form input {
+  border: none;
+  background: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.225px;
+  color: #1e1e1e;
+  display: inline-block;
+  margin: 0px 11px;
+}
+.moneyBackFormList form i {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #616161;
+  margin-left: -46px;
+}
+.moneyBackFormList p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #616161;
+  margin-top: 10px;
+}
+.moneyBackEmojiPart {
+  position: absolute;
+  top: 374px;
+  left: 45px;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+.moneyBackEmojiPart p {
+  background: #ffffff;
+  box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #616161;
+  margin-bottom: 16px;
+}
+p.moneyBackEmojiPart_01 {
+  padding: 12px 25px 12px 20px;
+  display: inline-block;
+}
+p.moneyBackEmojiPart_02 {
+  padding: 12px 20px;
+  display: inline-block;
+  margin-left: 30px;
+}
+p.moneyBackEmojiPart_03 {
+  padding: 12px 40px 12px 20px;
+  display: inline-block;
+}

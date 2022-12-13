@@ -14,10 +14,10 @@ $('.popularSliderPart').slick({
   dots: false,
   arrows: false,
   centerMode: true,
-  centerPadding: '289px',
+  centerPadding: '300px',
   infinite: true,
   speed: 300,
-  slidesToShow: 5,
+  slidesToShow: 3,
   slidesToScroll: 1,
   responsive: [
     {
@@ -43,8 +43,10 @@ $('.popularSliderPart').slick({
         slidesToScroll: 1
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
+});
+////////////////// Travel part ar counter added code ////////////////
+$('.travelPrice').counterUp({
+  delay: 10,
+  time: 1000
 });
